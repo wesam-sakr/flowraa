@@ -1,10 +1,13 @@
 html{
-    background-color:#fff;}
+    background-color:#fff;
+    scroll-behavior: smooth;
+
+}
 body{
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     background-color:#fff;
-    margin-bottom: 360px;}
+}
 .up{
     width: 50px;
     height: 50px;
@@ -23,7 +26,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     background-color: #fff;}
 .nav-item a:hover{
     color:#fe81ac !important ;
@@ -63,65 +66,59 @@ nav div ul li i{
 .about{
     color: #999999;}
 
-/* .serv
-{
-    position: relative;
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-areas:
+        'item1 item2 item4'
+        'item1 item3 item4';
+    gap: 15px;
+}
+.gallery-container .item{
     overflow: hidden;
-    transform-origin: center center;
+    animation-duration: 2s;
+    transition: .4s;
+    position: relative;
 }
-.serv img
-{
-    transition: 1s 0s transform ease-in;
+.gallery-container .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.serv:hover img{
-    transform: scale(1.1,1.1);
+.gallery-container .item:nth-child(1) {
+    grid-area: item1;
 }
-.col-6 .serv .serviesBtn
-{
+.gallery-container .item:nth-child(4) {
+    grid-area: item4;
+}
+.gallery-container .item .serviesBtn{
     position: absolute;
-    top: 80vh;
-    left: 15px;  
+    bottom: 30px;
+    left: 0%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
-.col-3 .serv .serviesBtn
-{
-    position: absolute;
-    top: 80vh;
-    left:22%;
-}
-.col-3 .row .serv .serviesBtn
-{
-    position: absolute;
-    top: 35vh;
-    left: 23%;  
-}
-
-.serv .serviesBtn a
-{
+.gallery-container .item .serviesBtn a{
     background-color: white;
     font-weight: 500;
     border-radius: 0;
-    
-} */
-
-.serv .serviesBtn a{
-    background-color: white;
-    font-weight: 500;
-    border-radius: 0;}
-.serv{
-    overflow: hidden;
-    background-size: 100% 100%;
-    transform-origin: center center;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation-duration: 2s;}
-.serv:hover{
-    animation-name: zoom;}
+    padding: .5rem 1.5rem;
+}
+.gallery-container .item img{
+    transition: all .6s;
+}
+.gallery-container .item:hover img{
+    transform: scale(1.2);
+}
 @keyframes zoom {
     0%{background-size: 100% 100%;}
     50%{background-size: 120% 120%;}
-    100%{background-size: 100% 100%;}}
-
+    100%{background-size: 100% 100%;}
+}
 .trends{
     position: relative;
 }
@@ -176,7 +173,12 @@ nav div ul li i{
     background-position: center center;
     background-size: cover;
     opacity: 0;
-    transition-duration: 1s;}
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .trending:hover .trendHover{
     opacity: 1;}
 .trendHover a:hover{
@@ -184,19 +186,29 @@ nav div ul li i{
     color: white;
 }
 
-.action{
-    height: 90vh;}
-.callAction{
+.add-to-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 2rem;
     background-position: center center;
     background-size: 100% 100%;
-    height: 95vh;}
+}
 .zoom{
     overflow: hidden;}
 .zoom img{
-    transition: 1s transform ;
-    transform-origin: center center;}
+    transition: 1s transform;
+    transform-origin: center center;
+    height: 240px;
+    object-fit: cover;
+}
 .zoom:hover img{
     transform: scale(1.2);}
+.blog p{
+    
+}
 
 footer{
     width: 100%;
@@ -205,8 +217,11 @@ footer{
     bottom: 0;
     z-index:-1;
 }
-.foot{background-position: center center;
-    background-size: cover;}
+.foot{
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .fa-facebook-f:hover{
     color: #3b5998;
@@ -231,4 +246,53 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;}
+    color: white;
+}
+.btn-dark.focus, .btn-dark:focus {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+    box-shadow: none !important;
+}
+@media(max-width:992px){
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-areas:
+        'item1 item2 item4'
+        'item1 item3 item4';
+        gap: 10px;
+    }
+}
+
+@media(max-width:578px){
+    .trends .carousel-item img{
+        height: 200px !important;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas:
+            'item1 item2'
+            'item1 item3'
+            'item1 item4';
+        gap: 5px;
+    }
+    .zoom img {
+        height: 165px;
+    }
+    footer {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    body{
+        margin-bottom: 0 !important;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    .copyright .container{
+        flex-wrap: wrap;
+    }
+}

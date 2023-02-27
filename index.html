@@ -4,61 +4,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLORAA</title>
     <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/indexs-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">    
-    <script src="Js/popper.min.js"></script>
-    <script src="Js/jquery.min.js"></script>
-    <script src="Js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!--navbar-->
-        <nav class="nav-bar navbar navbar-expand-lg  py-2 bg-navbar">
-            <div class="container">
-                <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Floraa</a>
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <a class="nav-link  text-dark mr-3" target="_blank" href="wedding.html">Wedding<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  text-dark mr-3" target="_blank" href="event.html">Event</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  text-dark mr-3" href="#">Celebrations</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  text-dark mr-3" href="#">Home Decor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-dark mr-3" href="#">Sale</a>
-                  </li>
-              </ul>
-            
-              <ul class="navbar-nav text-dark">
-                
-                <li class="nav-item py-2">
-                    <a href="sign.html" target="_blank" class="text-dark"><i class="far fa-user mr-4"></i></a>
-                </li>
-                <li class="nav-item py-2" style="position: relative;">
-                    <a href="" class="text-dark"><i class="far fa-heart mr-4"></i></a>
-                    <div id="like" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: 27%;top:7%;"></div>
-                </li>
-                <li class="nav-item py-2" style="position: relative;">
-                    <a href="" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
-                    <div id="cart" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: -25%;top:7%;"></div>
+    <nav class="nav-bar navbar navbar-expand-lg  py-2 bg-navbar">
+        <div class="container">
+            <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Floraa</a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" target="_blank" href="wedding.html">Wedding<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" target="_blank" href="event.html">Event</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" href="#">Celebrations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" href="#">Home Decor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" href="#">Sale</a>
                 </li>
             </ul>
-            </div>
-            </div>
-        </nav>
+        
+            <ul class="navbar-nav text-dark">
+            
+            <li class="nav-item py-2">
+                <a href="sign.html" target="_blank" class="text-dark"><i class="far fa-user mr-4"></i></a>
+            </li>
+            <li class="nav-item py-2" style="position: relative;">
+                <a href="" class="text-dark"><i class="far fa-heart mr-4"></i></a>
+                <div id="like" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: 27%;top:7%;"></div>
+            </li>
+            <li class="nav-item py-2" style="position: relative;">
+                <a href="" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
+                <div id="cart" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: -25%;top:7%;"></div>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
     <!--navbar end-->
     
     <header>
@@ -134,89 +130,39 @@
         </div>
     </section>
 
-    <!--<section class="servies pb-5">
-        <div class="container">
-            <div class="row" style="height: 90vh;">
-                <div class="col-6">
-                    <div class="serv">
-                        <img class="w-100 h-100" src="images/events.webp" alt="">
-                        <div class="serviesBtn">
-                            <a href="#" class="btn btn-md px-4 active" role="button" aria-pressed="true">Events</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-3">
-                    <div class="row h-50 pb-3">
-                        <div class="h-100 serv" style="overflow: hidden;">
-                            <img class="w-100" src="images/celebration.webp" alt="">
-                            <div class="serviesBtn">
-                                <a href="#" class="btn btn-md px-4 active" role="button" aria-pressed="true">Celebration</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row h-50 ">
-                        <div class="h-100 serv" style="overflow: hidden;">
-                            <img class="w-100" src="images/wedding decor.webp" alt="">
-                            <div class="serviesBtn">
-                                <a href="#" class="btn btn-md px-4 active" role="button" aria-pressed="true">Wedding Decor</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="col-3">
-                    <div class="serv">
-                        <img class="w-100 h-100" src="images/home decor.webp" alt="">
-                        <span class="serviesBtn d-flex align-items-end justify-content-center">
-                            <a href="#" class="btn btn-md px-4 active" role="button" aria-pressed="true">Home Decor</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
     <!--servies-->
-    <section class="servies pb-5">
+    <section class="servies py-5">
         <div class="container">
-            <div class="row" style="height: 90vh;">
-                <div class="col-6">
-                    <div class="serv h-100" style="background-image: url(images/events.webp);">
-                        <div class="serviesBtn h-100 d-flex justify-content-center align-items-end">
-                            <a href="event.html" class="btn btn-md px-4 mb-4" role="button" aria-pressed="true">Events</a>
-                        </div>
+            <div class="gallery-container">
+                <div class="item">
+                    <img src="images/events.webp" alt="">
+                    <div class="serviesBtn">
+                        <a href="event.html" class="btn" role="button" aria-pressed="true">Events</a>
                     </div>
                 </div>
-                
-                <div class="col-3">
-                    <div class="row h-50 pb-3">
-                        <div class="h-100 w-100 serv" style="background-image: url(images/celebration.webp);">
-                            <div class="serviesBtn h-100 d-flex justify-content-center align-items-end">
-                                <a href="#" class="btn btn-md px-4 mb-4" role="button" aria-pressed="true">Celebration</a>
-                            </div>
-                        </div>
+                <div class="item">
+                    <img src="images/celebration.webp" alt="">
+                    <div class="serviesBtn">
+                        <a href="#" class="btn" role="button" aria-pressed="true">Celebration</a>
                     </div>
-                    <div class="row h-50 ">
-                        <div class="h-100 w-100 serv" style="background-image: url(images/wedding\ decor.webp);">
-                            <div class="serviesBtn h-100 d-flex justify-content-center align-items-end">
-                                <a href="wedding.html" class="btn btn-md px-4 mb-4" role="button" aria-pressed="true">Wedding Decor</a>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
-
-                <div class="col-3">
-                    <div class="serv h-100" style="background-image: url(images/home\ decor.webp);">
-                        <span class="serviesBtn h-100 d-flex align-items-end justify-content-center">
-                            <a href="#" class="btn btn-md px-4 mb-4" role="button" aria-pressed="true">Home Decor</a>
-                        </span>
+                <div class="item">
+                    <img src="images/wedding decor.webp" alt="">
+                    <div class="serviesBtn">
+                        <a href="wedding.html" class="btn" role="button" aria-pressed="true">Wedding Decor</a>
                     </div>
+                </div>
+                <div class="item">
+                    <img src="images/home decor.webp" alt="decor">
+                    <span class="serviesBtn">
+                        <a href="#" class="btn" role="button" aria-pressed="true">Home Decor</a>
+                    </span>
                 </div>
             </div>
         </div>
     </section>
     <!--servies end-->
+
 
    <!--trending-->
    <section class="trends" >
@@ -226,15 +172,15 @@
             <div class="line"></div>
         </div>
         <div class="row justify-content-center" id="blur">
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/1.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/11.webp);">
-                        <div class="trendBtn mt-3">
-                            <a class="btn btn-md px-4 mt-5 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a onclick="addCart()" class="btn btn-md px-4 mb-3 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -242,15 +188,15 @@
                 <p class="text-muted">$125.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/2.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/22.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a class="btn btn-md px-4 mb-3  rounded-pill cart" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -258,15 +204,15 @@
                 <p class="text-muted">$185.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/3.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/33.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -274,15 +220,15 @@
                 <p class="text-muted">$95.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/4.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/44.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -290,15 +236,15 @@
                 <p class="text-muted">$145.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/5.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/55.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -306,15 +252,15 @@
                 <p class="text-muted">$195.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/6.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/66.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -322,15 +268,15 @@
                 <p class="text-muted">$195.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/7.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/77.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -338,15 +284,15 @@
                 <p class="text-muted">$295.00</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="col-lg-3 col-md-4 col-6 trend">
                 <div class="trending zoom">
                     <img class="w-100" src="images/8.webp" alt="">
-                    <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/88.webp);">
-                        <div class="trendBtn mt-3">
-                            <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                    <div class="trendHover" style="background-image: url(images/11.webp);">
+                        <div class="trendBtn mb-3">
+                            <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                         </div>
-                        <div class="trendBtn mb-5">
-                            <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                        <div class="trendBtn">
+                            <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                         </div>
                     </div>
                 </div>
@@ -358,16 +304,16 @@
 
     <div  id="popup" >
         <div class="row no-gutters h-100">
-            <div class="col-6 w-100">
+            <div class="col-md-6 w-100">
                 <div id="carouselExampleControls" class="carousel slide m-0" data-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active h-100">
+                      <div class="carousel-item active">
                         <img src="images/1.webp" class="d-block w-100 h-100" alt="...">
                       </div>
-                      <div class="carousel-item h-100">
+                      <div class="carousel-item">
                         <img src="images/11.webp" class="d-block w-100 h-100" alt="...">
                       </div>
-                      <div class="carousel-item h-100">
+                      <div class="carousel-item">
                         <img src="images/111.webp" class="d-block w-100 h-100" alt="...">
                       </div>
                     </div>
@@ -381,7 +327,7 @@
                     </a>
                   </div>
             </div>
-            <div class="col-6 pl-4 pt-5 h-100" style="background-color: #fff;color: black;">
+            <div class="col-md-6 pl-4 pt-5 h-100" style="background-color: #fff;color: black;">
                 <div class="container-fluid py-4">
                     <h3>Regular Succulent Shebang</h3>
                     <h4 class="text-muted">$<span id="price"></span>.00</h4>
@@ -410,14 +356,14 @@
 
     <section class="py-5">
         <div class="container">
-            <div class="Action">
+            <div class="">
                 <div class="row no-gutters">
-                    <div class="col ">
+                    <div class="col-12 col-md-6 d-none d-sm-block">
                       <img class="w-100 h-100" src="images/banner-text_900x.webp" alt="">  
                     </div>
-    
-                    <div class="col text-center h-100">
-                        <div class="py-5 callAction d-flex flex-colum flex-wrap align-items-center justify-content-center"  style="background-image: url(images/banner-text-03_900x.webp);">
+
+                    <div class="col-12 col-md-6">
+                        <div class="add-to-cart"  style="background-image: url(images/banner-text-03_900x.webp);">
                             <div class="container-fluid">
                                 <h2 class="text-bold">Fall Floral Arranging Workshop</h2>
                                 <p class="py-2">Flowers look great in a vase, but if you've got a little extra time at home these days and need a fun project, here are five great ways to play with your flowers!
@@ -439,15 +385,15 @@
                 <div class="line"></div>
             </div>
             <div class="row">
-                <div class="col-3 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
                         <img class="w-100" src="images/s1.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s11.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/11.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                             </div>
                         </div>
                     </div>
@@ -455,15 +401,15 @@
                     <p class="text-muted">$333.00</p>
                 </div>
 
-                <div class="col-3 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
                         <img class="w-100" src="images/s2.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s22.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/11.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                             </div>
                         </div>
                     </div>
@@ -471,15 +417,15 @@
                     <p class="text-muted">$295.00</p>
                 </div>
 
-                <div class="col-3 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
                         <img class="w-100" src="images/s3.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s33.webp);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/11.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                             </div>
                         </div>
                     </div>
@@ -487,15 +433,15 @@
                     <p class="text-muted">$195.00</p>
                 </div>
 
-                <div class="col-3 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
                         <img class="w-100" src="images/s4.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s44.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/11.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md px-4 rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a onclick="addCart()" class="btn btn-md px-4 rounded-pill cart " role="button" aria-pressed="true">Add To Card</a> 
                             </div>
                         </div>
                     </div>
@@ -507,6 +453,7 @@
     </section>
     <!--BEST SELLER END-->
 
+    <!--LATEST FROM BLOG-->
     <section class="pb-5">
         <div class="container">
             <div class="text-center mb-5">
@@ -514,7 +461,7 @@
                 <div class="line"></div>
             </div>
             <div class="row">
-                <div class="col-4 blog">
+                <div class="col-12 col-md-4 blog">
                     <div class="zoom">
                         <img class="w-100" src="images/l1.webp" alt="">
                     </div>
@@ -523,7 +470,7 @@
                     <p class="text-muted">Dried flower straw wreathes are super fun and easy to make. Don't have dried flowers? We couldn’t be more thrilled ...</p>
                 </div>
 
-                <div class="col-4 blog">
+                <div class="col-12 col-md-4 blog">
                     <div class="zoom">
                         <img class="w-100" src="images/l2.webp" alt="">
                     </div>
@@ -531,7 +478,7 @@
                     <p class="text-muted">Flowers look great in a vase, but if you've got a little extra time at home these days and need a fun project, here...</p>
                 </div>
 
-                <div class="col-4 blog">
+                <div class="col-12 col-md-4 blog">
                     <div class="zoom">
                         <img class="w-100" height="270" src="images/l3.jpg" alt="">
                     </div>
@@ -541,17 +488,18 @@
             </div> 
         </div>
     </section>
+    <!--LATEST FROM BLOG END-->
 
     <footer class="mt-5 pt-5" >
        <div class="foot pt-5" style="background-image: url('images/bgfooter.jpg');">
-        <div class="container pb-4">
+        <div class="container pb-3">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-md-12 col-lg-3 pb-4">
                     <h5>Get in touch</h5>
                         <li style="display:flex;" class="my-3 text-muted"><i class="fa fa-map-marker mr-3" ></i><h6>184 Main Rd E, St Albans
                             VIC 3021, Australia</h6>
                         </li>
-                        <li style="display:flex" class="my-4 text-muted"><i class="fa fa-envelope mr-3"></i><h6>contact@company.com</h6>
+                        <li style="display:flex" class="my-3 text-muted"><i class="fa fa-envelope mr-3"></i><h6>contact@company.com</h6>
                         </li>
                         <li style="display:flex;" class="mb-3 text-muted"><i class="fa fa-phone mr-3"></i><h6>+001 2233 456</h6>
                         </li>
@@ -563,7 +511,8 @@
                             <i class="fab fa-pinterest-p"></i>
                         </li>
                 </div>
-                <div class="col-3">
+
+                <div class="col-4 col-md-4 col-lg-3">
                     <h5>Categories</h5>
                     <p class="text-muted mt-3">Celebrations</p>
                     <p class="text-muted">Events</p>
@@ -572,7 +521,7 @@
                     <p class="text-muted">Wedding Decor</p>
                 </div>
 
-                <div class="col-3">
+                <div class="col-4 col-md-4 col-lg-3">
                     <h5>Portfolio</h5>
                     <p class="text-muted mt-3">Events</p>
                     <p class="text-muted">Weddings</p>
@@ -581,7 +530,7 @@
                     <p class="text-muted">Home Decoration</p>
                 </div>
                 
-                <div class="col-3">
+                <div class="col-4 col-md-4 col-lg-3">
                     <h5>Useful links</h5>
                     <p class="text-muted mt-3">Return & Policy</p>
                     <p class="text-muted">Store Location</p>
@@ -592,9 +541,9 @@
             </div>
         </div>
        </div>
-        <div style="background-color:white;">
+        <div class="copyright" style="background-color:white;">
             <div class="container d-flex justify-content-between py-3 text-muted">
-                <div>Copyright © 2020 Kalles all rights reserved. Powered by The4</div>
+                <p>Copyright © 2020 Kalles all rights reserved. Powered by The4</p>
                 <div class="text-right">
                     <a href="about.html" target="_blank" class="text-muted mr-3">About Us</a>
                     <a href="contact.html" target="_blank" class="text-muted mr-3">Contact Us</a>
@@ -607,9 +556,14 @@
     </footer>
 
     <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
-        <a href="index.html"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
+        <a href="#"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
     </div>
 
-    <script src="Js/first.js"></script>
+
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/script.js"></script>
+
 </body>
 </html>

@@ -40,7 +40,6 @@ function addCart(){
         x[0].innerHTML="Add To Cart";
 
     }
-
     document.getElementById('cart').innerHTML= cart; 
     document.querySelector('trend trending trendBtn cart').innerHTML="Remove From Cart";
 }
@@ -56,7 +55,16 @@ function add(){
     document.getElementById('price').innerHTML= price * amount;   
 }
 function sub(){
-    amount=amount-1;
+    if(amount>1){
+        amount=amount-1;
+    }
     document.getElementById('amount').innerHTML= amount;
     document.getElementById('price').innerHTML= price * amount;
 }
+
+var footerHeight= $('footer').height()
+$('body').css("margin-bottom", footerHeight)
+
+$(window).resize(function() {
+    $('body').css("margin-bottom", footerHeight)
+})
