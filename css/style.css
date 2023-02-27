@@ -130,6 +130,9 @@ nav div ul li i{
 #popup{
     width: 75%;
     height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;;
     margin: auto;
     position: fixed;
     z-index: 9;
@@ -153,10 +156,11 @@ nav div ul li i{
 }
 .line{
     width: 15%;
-    height: .5%;
+    height: 2.2px;
     background-color:#fe81ac ;
     margin: auto;
-    border-radius: 2px;}
+    border-radius: 2px;
+}
 .trend h6{
     color:#fe81ac ;}
 .trendBtn a{
@@ -206,9 +210,6 @@ nav div ul li i{
 }
 .zoom:hover img{
     transform: scale(1.2);}
-.blog p{
-    
-}
 
 footer{
     width: 100%;
@@ -263,8 +264,23 @@ header {
         'item1 item3 item4';
         gap: 10px;
     }
+    .nav-item{
+        width: fit-content;
+    }
 }
-
+@media(max-width:767.8px){
+    footer {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    body{
+        margin-bottom: 0 !important;
+    }
+    .gallery-container .item .serviesBtn a {
+        padding: 0.5rem 0.75rem;
+    }
+}
 @media(max-width:578px){
     .trends .carousel-item img{
         height: 200px !important;
@@ -281,18 +297,21 @@ header {
     .zoom img {
         height: 165px;
     }
-    footer {
-        width: 100%;
-        position: relative;
-        z-index: 0;
-    }
-    body{
-        margin-bottom: 0 !important;
-    }
+    
     .copyright p{
         font-size: 12px;
     }
     .copyright .container{
         flex-wrap: wrap;
+    }
+    .line{
+        width: 33%;
+    }
+    #popup{
+        width: 90%;
+        left: 5%;
+    }
+    #popup .btns{
+        margin: 0;
     }
 }
