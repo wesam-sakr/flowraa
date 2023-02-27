@@ -1,0 +1,234 @@
+html{
+    background-color:#fff;}
+body{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background-color:#fff;
+    margin-bottom: 360px;}
+.up{
+    width: 50px;
+    height: 50px;
+    background-color:white;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    z-index: 5;
+    border-radius: 4px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .30);}
+.active{
+    color:#fe81ac !important;
+    font-weight: 900;}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;}
+.nav-item a:hover{
+    color:#fe81ac !important ;
+    font-weight: 900;}
+.navbar-brand{
+    font-size: 2rem;
+    color:#fe81ac !important ;}
+.navbar-brand:hover{
+    font-size: 2rem;
+    color:#94ccb9 !important ;}
+nav div ul li i{
+    font-size: 1.4rem;
+    font-weight: 200;}
+
+/*----slide----*/
+
+.slide{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.75rem;  
+    margin-top: 5%;}
+.slide .bg{
+    background-size: cover;
+    background-position: center center;}
+.slide .carousel-item h5{
+    color: #94ccb9 ;
+    font-weight: 500;}
+.slide .carousel-item h1{
+    color:#fe81ac ;
+    font-weight: 900;  }
+.slide .carousel-item p{
+    font-weight: 500;
+    color: #696969;}
+.slide .carousel-item a{
+    background-color:  #94ccb9;
+    color: white;}
+
+.about{
+    color: #999999;}
+
+/* .serv
+{
+    position: relative;
+    overflow: hidden;
+    transform-origin: center center;
+}
+.serv img
+{
+    transition: 1s 0s transform ease-in;
+}
+
+.serv:hover img{
+    transform: scale(1.1,1.1);
+}
+.col-6 .serv .serviesBtn
+{
+    position: absolute;
+    top: 80vh;
+    left: 15px;  
+}
+.col-3 .serv .serviesBtn
+{
+    position: absolute;
+    top: 80vh;
+    left:22%;
+}
+.col-3 .row .serv .serviesBtn
+{
+    position: absolute;
+    top: 35vh;
+    left: 23%;  
+}
+
+.serv .serviesBtn a
+{
+    background-color: white;
+    font-weight: 500;
+    border-radius: 0;
+    
+} */
+
+.serv .serviesBtn a{
+    background-color: white;
+    font-weight: 500;
+    border-radius: 0;}
+.serv{
+    overflow: hidden;
+    background-size: 100% 100%;
+    transform-origin: center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-duration: 2s;}
+.serv:hover{
+    animation-name: zoom;}
+@keyframes zoom {
+    0%{background-size: 100% 100%;}
+    50%{background-size: 120% 120%;}
+    100%{background-size: 100% 100%;}}
+
+.trends{
+    position: relative;
+}
+#blur.active{
+    filter:blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+#popup{
+    width: 75%;
+    height: 80vh;
+    margin: auto;
+    position: fixed;
+    z-index: 9;
+    left: 12.5%;
+    top: 11.5%;
+    visibility: hidden;
+    transition: 1s;
+    transform: scale(0);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+}
+#popup.active{
+    visibility: visible;
+    transition: 1s;
+    transform:scale(1) ;
+}
+.add{
+    background-color:#fe81ac;color: white;font-weight: bold;
+}
+.add:hover{
+    background-color:#94ccb9;color: white;font-weight: bold;
+}
+.line{
+    width: 15%;
+    height: .5%;
+    background-color:#fe81ac ;
+    margin: auto;
+    border-radius: 2px;}
+.trend h6{
+    color:#fe81ac ;}
+.trendBtn a{
+    background-color:#fe81ac;
+    color: white;}
+.trending{
+    position: relative;}
+.trendHover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: thistle;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition-duration: 1s;}
+.trending:hover .trendHover{
+    opacity: 1;}
+.trendHover a:hover{
+    background-color:  #94ccb9;
+    color: white;
+}
+
+.action{
+    height: 90vh;}
+.callAction{
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 95vh;}
+.zoom{
+    overflow: hidden;}
+.zoom img{
+    transition: 1s transform ;
+    transform-origin: center center;}
+.zoom:hover img{
+    transform: scale(1.2);}
+
+footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+}
+.foot{background-position: center center;
+    background-size: cover;}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+
+.fa-twitter:hover{
+    color: #00aced;
+}
+
+.fa-instagram:hover{ 
+    color: #517fa4;
+}
+
+.fa-linkedin-in:hover{ 
+    color: #007bb6;}
+
+.fa-pinterest-p:hover{ 
+    color:#cb2027;}
+
+/*-------sub-------*/
+header {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;}

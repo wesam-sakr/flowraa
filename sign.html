@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORAA-Sign</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/indexs-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">    
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="nav-bar navbar navbar-expand-lg  py-2 bg-navbar">
+        <div class="container">
+            <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Floraa</a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link  text-dark mr-3" target="_blank" href="wedding.html">Wedding<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark mr-3" target="_blank" href="event.html">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark mr-3" href="#">Celebrations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark mr-3" href="#">Home Decor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark mr-3" href="#">Sale</a>
+              </li>
+          </ul>
+        
+          <ul class="navbar-nav text-dark">
+                
+            <li class="nav-item py-2">
+                <a href="sign.html" target="_blank" class="text-dark"><i class="far fa-user mr-4"></i></a>
+            </li>
+            <li class="nav-item py-2" style="position: relative;">
+                <a href="" class="text-dark"><i class="far fa-heart mr-4"></i></a>
+                <div id="like" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: 27%;top:7%;"></div>
+            </li>
+            <li class="nav-item py-2" style="position: relative;">
+                <a href="" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
+                <div id="cart" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: -25%;top:7%;"></div>
+            </li>
+        </ul>
+
+        </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <header style="background-image: #ccc;margin-top: 5%;">
+        <div style="background-color:rgba(0,0,0,.4)">
+            <div class="py-5 text-center">
+                <h1>My Account</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-3 mt-5">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="pb-3">LOGIN</h3>
+                <p class="text-muted">Email</p>
+                <input type="email" required class="form-control mb-3">
+                <p class="text-muted">Password</p>
+                <input type="password" required class="form-control mb-3">
+                <p class="text-muted">Forget your password?</p>
+                <a href="index.html"  class="btn btn-dark rounded-pill px-5 mb-3">Sign in</a>
+            </div>
+            <div class="col" >
+                <h3 class="pb-3">REGISTER</h3>
+                <p class="text-muted">First Name</p>
+                <input type="text" required class="form-control mb-3">
+                <p class="text-muted">Last Name</p>
+                <input type="text" required class="form-control mb-3">
+                <p class="text-muted">Email</p>
+                <input type="email" required class="form-control mb-3">
+                <p class="text-muted">Password</p>
+                <input type="password" required class="form-control mb-3">
+                <a href="index.html"  class="btn btn-dark rounded-pill px-5 mb-3">Register</a>
+            </div>
+        </div>
+    </div>
+   
+
+    <footer class="mt-5 pt-5" >
+        <div class="foot pt-5" style="background-image: url('images/bgfooter.jpg');">
+         <div class="container pb-4">
+             <div class="row">
+                 <div class="col-3">
+                     <h5>Get in touch</h5>
+                         <li style="display:flex;" class="my-3 text-muted"><i class="fa fa-map-marker mr-3" ></i><h6>184 Main Rd E, St Albans
+                             VIC 3021, Australia</h6>
+                         </li>
+                         <li style="display:flex" class="my-4 text-muted"><i class="fa fa-envelope mr-3"></i><h6>contact@company.com</h6>
+                         </li>
+                         <li style="display:flex;" class="mb-3 text-muted"><i class="fa fa-phone mr-3"></i><h6>+001 2233 456</h6>
+                         </li>
+                         <li class="text-muted" style="display:flex;">
+                             <i class="fab fa-facebook-f mr-4"></i>
+                             <i class="fab fa-twitter mr-4"></i>
+                             <i class="fab fa-instagram mr-4"></i>
+                             <i class="fab fa-linkedin-in mr-4"></i>
+                             <i class="fab fa-pinterest-p"></i>
+                         </li>
+                 </div>
+                 <div class="col-3">
+                     <h5>Categories</h5>
+                     <p class="text-muted mt-3">Celebrations</p>
+                     <p class="text-muted">Events</p>
+                     <p class="text-muted">Home Decor</p>
+                     <p class="text-muted">Seasonal Bouquet</p>
+                     <p class="text-muted">Wedding Decor</p>
+                 </div>
+ 
+                 <div class="col-3">
+                     <h5>Portfolio</h5>
+                     <p class="text-muted mt-3">Events</p>
+                     <p class="text-muted">Weddings</p>
+                     <p class="text-muted">Daily Florals</p>
+                     <p class="text-muted">Celebrations</p>
+                     <p class="text-muted">Home Decoration</p>
+                 </div>
+                 
+                 <div class="col-3">
+                     <h5>Useful links</h5>
+                     <p class="text-muted mt-3">Return & Policy</p>
+                     <p class="text-muted">Store Location</p>
+                     <p class="text-muted">Latest Posts</p>
+                     <p class="text-muted">Size Guide</p>
+                     <p class="text-muted">About Us</p>
+                 </div>
+             </div>
+         </div>
+        </div>
+         <div style="background-color:white;">
+             <div class="container d-flex justify-content-between py-3 text-muted">
+                 <div>Copyright © 2020 Kalles all rights reserved. Powered by The4</div>
+                 <div class="text-right">
+                     <a href="about.html" target="_blank" class="text-muted mr-3">About Us</a>
+                     <a href="contact.html" target="_blank" class="text-muted mr-3">Contact Us</a>
+                     <a href="" class="text-muted mr-3">Shop</a>
+                     <a href="" class="text-muted">blog</a>
+ 
+                 </div>
+             </div>
+         </div>
+    </footer>
+ 
+    <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
+        <a href="index.html">
+            <i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i>
+        </a>
+    </div>
+
+    <script src="Js/first.js"></script>
+</body>
+</html>
