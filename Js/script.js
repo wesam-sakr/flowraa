@@ -21,28 +21,21 @@ function addLike(){
     document.getElementById('like').innerHTML= like;
 }
 
-var cart=0;
-document.getElementById('cart').innerHTML= cart;
-function addCart(){
-    if (cart==0)
-    {
-        cart=cart+1;
-        document.getElementById('cart').innerHTML= cart; 
-        var x =document.getElementsByClassName('cart');
-        x[0].innerHTML="Remove From Cart";
-        alert("one item added to cart successfully");
+// ADD AND REMOVE CART
+var cart = Number(document.getElementById('cart').innerHTML);
+$('.cart').click(function(){
+    var cartTxt = this.innerHTML
+    if( cartTxt == 'Add To Cart'){
+        cartTxt = 'Remove From Cart';
+        cart = cart+1;
+        this.innerHTML = cartTxt
     }
-    else if (cart==1)
-    {  
-        cart=0;
-        document.getElementById('cart').innerHTML= cart; 
-        var x =document.getElementsByClassName('cart');
-        x[0].innerHTML="Add To Cart";
-
+    else {
+        this.innerHTML = 'Add To Cart';
+        cart = cart-1;
     }
-    document.getElementById('cart').innerHTML= cart; 
-    document.querySelector('trend trending trendBtn cart').innerHTML="Remove From Cart";
-}
+    document.getElementById('cart').innerHTML= cart;
+})
 
 var price=125.00;
 document.getElementById('price').innerHTML= price;
@@ -68,3 +61,9 @@ $('body').css("margin-bottom", footerHeight)
 $(window).resize(function() {
     $('body').css("margin-bottom", footerHeight)
 })
+$('.carousel-main').flickity();
+$('.carousel-nav').flickity({
+    asNavFor: '.carousel-main',
+    contain: true,
+    pageDots: false
+  });
