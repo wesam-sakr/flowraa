@@ -5,9 +5,10 @@
     <title>FLORAA</title>
     <link rel="icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">    
-    <link rel="" href="https://npmcdn.com/flickity@2/dist/flickity.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/flickity.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -72,138 +73,125 @@
         </div>
     </header>
 
-    <div class="container product-details py-5">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-5">
-                <div class="" style="overflow: hidden;">
-                    <!-- Flickity HTML init -->
-                    <div class="carousel carousel-main" data-flickity>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                    </div>
-                    
-                    <div class="carousel carousel-nav"
-                        data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                        <div class="carousel-cell"></div>
-                    </div>
-                    <div class="single-img">
-                        <div class="all">
-                            <div class="slider">
-                                <div class="owl-carousel owl-theme one">
-                                    <div class="item-box">
-                                        <img src="images/621-XX-K6-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item-box">
-                                        <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item-box">
-                                        <img src="images/AC19255_5-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item-box">
-                                        <img src="images/621-XX-K6-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item-box">
-                                        <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item-box">
-                                        <img src="images/AC19255_5-removebg-preview.png" alt="">
-                                    </div>
-                                </div>
+    <div class="product-details">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="" >
+                        <!-- Flickity HTML init -->
+                        <div class="carousel carousel-main" data-flickity>
+                            <div class="carousel-cell">
+                                <img src="images/1.webp" alt="">
                             </div>
-                            <div class="slider-two">
-                                <div class="owl-carousel owl-theme two">
-                                    <div class="item active">
-                                        <img src="images/621-XX-K6-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/AC19255_5-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/621-XX-K6-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/achilles-desert-hawk-m-t-removebg-preview.png" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/AC19255_5-removebg-preview.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="left-t nonl-t">
-                                    <i class="bi bi-chevron-left"></i>
-                                </div>
-                                <div class="right-t">
-                                    <i class="bi bi-chevron-right"></i>
-                                </div>
+                            <div class="carousel-cell">
+                                <img src="images/2.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/3.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/4.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/5.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/2.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/3.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/4.webp" alt="">
                             </div>
                         </div>
+                        
+                        <div class="carousel carousel-nav"
+                            data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+                            <div class="carousel-cell">
+                                <img src="images/1.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/2.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/3.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/4.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/5.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/2.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/3.webp" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="images/4.webp" alt="">
+                            </div>
+                        </div>
+    
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-7">
-                <div class="cart-product-item bg-transparent">
-                    <div class="col-12">
-                        <div class="cart-product-name d-flex justify-content-between align-items-center mb-3">
-                          <h6>Regular Succulent Shebang</h6>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <a href="" class="fav-product border-0"><i class="bi bi-heart"></i> اضافة الى المفضلة</a>
+                <div class="col-12 col-md-6">
+                    <div class="cart-product-item bg-transparent">
+                        <div class="col-12">
+                            <div class="cart-product-name d-flex justify-content-between align-items-center mb-3">
+                              <h5>Regular Succulent Shebang</h5>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn py-2 rounded"><i class="far fa-heart" style="color: #000;"></i></button>
+                              </div>
+                            </div>
+                            <div id="rateYo" class="mb-3" rateYo="3"></div>
+                            <p class="product-preview">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit blanditiis officia quibusdam repellat eligendi praesentium id iste, velit voluptas! Fuga aut tenetur in. Sunt consectetur ipsa provident dolor voluptate numquam dolore aut? Neque ratione hic expedita, architecto voluptatibus voluptates.
+                            </p>
+                            <ul class="plant-care">
+                                <li>
+                                    <img src="images/watering.png" alt="">
+                                    <div>
+                                        <h5>irrigation</h5>
+                                        <p>The plant is not irrigated until the soil is partially dry, and it is preferable to spray its leaves with water mist constantly, as it is moisture-loving.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/plant (1).png" alt="">
+                                    <div>
+                                        <h5>lighting</h5>
+                                        <p>The plant needs bright to medium light such as window light or artificial room lighting.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/temperature.png" alt="">
+                                    <div>
+                                        <h5>temperature</h5>
+                                        <p>The plant needs a moderate atmosphere that is suitable for normal room temperature up to 25°C.</p>
+                                    </div>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span class="full-price px-2 px-md-3"><span id="price">250</span> $</span>
+                                </li>
+                            </ul>
+                            <div class="product-info">
+                              <div class="product-quantity">
+                                <a href="javascript:void(0);"onclick="add()" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                  <input type='text' name='quantity' value='1' class='qty' id="amount"/>
+                                <a href="javascript:void(0);" onclick="sub()" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                              </div>
+                              <button class="add-to-cart cart">Add To Cart</button>
+                            </div>
                           </div>
-                        </div>
-                        <div id="rateYo" class="mb-3" rateYo="3"></div>
-                        <p class="product-preview">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit blanditiis officia quibusdam repellat eligendi praesentium id iste, velit voluptas! Fuga aut tenetur in. Sunt consectetur ipsa provident dolor voluptate numquam dolore aut? Neque ratione hic expedita, architecto voluptatibus voluptates.
-                        </p>
-                        <ul>
-                            <li>
-                                <span>نوع السياره: </span>
-                                <span> نوع السيارة يكتب هنا</span>
-                            </li>
-                            <li>
-                                <span>موديل السياره: </span>
-                                <span> موديل السيارة يكتب هنا</span>
-                            </li>
-                            <li>
-                                <span>رقم القطعة: </span>
-                                <span> 23847357 </span>
-                            </li>
-                            <li>
-                                <span class="full-price px-2 px-md-3">250 ريال</span>
-                            </li>
-                        </ul>
-                        <div class="product-info">
-                          <div class="product-quantity">
-                            <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
-                              <input type='text' name='quantity' value='1' class='qty' />
-                            <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
-                          </div>
-                          <button class="add-to-cart">اضف الي السلة</button>
-                        </div>
                       </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="container description-comments">
+    <!-- <div class="container description-comments">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">الوصف</button>
@@ -340,7 +328,7 @@
             </div>
             <textarea name="comment" rows="5"></textarea>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -473,7 +461,7 @@
     <script src="Js/popper.min.js"></script>
     <script src="Js/jquery.min.js"></script>
     <script src="Js/bootstrap.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
     <script src="Js/script.js"></script>
 
 </body>

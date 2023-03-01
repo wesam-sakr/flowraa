@@ -37,21 +37,25 @@ $('.cart').click(function(){
     document.getElementById('cart').innerHTML= cart;
 })
 
-var price=125.00;
-document.getElementById('price').innerHTML= price;
+var price= Number(document.getElementById('price').innerHTML);
+// alert(price)
 
-var amount=1;
-document.getElementById('amount').innerHTML= amount;
+var amount= Number(document.getElementById('amount').value);
+$('#amount').change(function(){
+    amount= Number(document.getElementById('amount').value);
+    document.getElementById('price').innerHTML= price * amount;
+    // alert( amount +"           "+ price)
+})
 function add(){
     amount=amount+1;
-    document.getElementById('amount').innerHTML= amount;
+    document.getElementById('amount').value= amount;
     document.getElementById('price').innerHTML= price * amount;   
 }
 function sub(){
     if(amount>1){
         amount=amount-1;
     }
-    document.getElementById('amount').innerHTML= amount;
+    document.getElementById('amount').value= amount;
     document.getElementById('price').innerHTML= price * amount;
 }
 
