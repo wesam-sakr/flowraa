@@ -519,12 +519,11 @@ ul{
 
  .nav-pills .nav-link {
     color: var(--gray);
-    margin-left: 40px;
  }
  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: var(--secondry-color);
     background-color: transparent;
-    border-bottom: 2px solid var(--secondry-color);
+    border-bottom: 2px solid var(--main-color);
  }
  .nav-pills .nav-link {
     background: 0 0;
@@ -533,44 +532,39 @@ ul{
  }
  
  .description-comments{
-    padding: 20px;
     background-color: var(--ultra-lite);
     border-radius:10px;
-    margin-bottom: 50px;
  }
  .description-comments p{
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: initial;
     color: var(--gray);
     margin-bottom: 15px;
  }
- .rate-percentage{
-    font-size:16px;
-    width: 100%;
- }
- .description-comments .full-rate{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
- .description-comments .full-rate span:first-child{
-    font-size: 60px;
-    font-weight: 600;
-    color: var(--dark);
-    line-height: 1;
- }
- .description-comments .full-rate span:last-child{
-    font-size: 12px;
-    color: var(--gray);
- }
+ 
  .user-comment-container{
-    padding: 20px 0 20px 20px;
+    padding: 20px 20px 20px 0;
     max-height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
+ }
+ ::-webkit-scrollbar{
+    height: .5rem;
+    width: 0.6rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: var(--light);
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+ }
+ .user-comment-container::-webkit-scrollbar{
+    width: 3px;
  }
  .user-comment{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
  }
  .user-comment .avatar{
     padding: 0 15px;
@@ -587,12 +581,10 @@ ul{
  .your-comment{
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
  }
  .your-comment textarea{
     background-color: var(--white);
-    border: 1px solid var(--light);
-    width: 75%;
+    border: 1px solid #cdcdcd;
     border-radius: 5px;
     padding: 15px;
     font-size: 15px;
