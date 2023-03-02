@@ -388,103 +388,6 @@ header {
 .navbar-toggler:focus {
     box-shadow: none;
 }
-@media(max-width:992px){
-    .navbar-collapse{
-        position: absolute;
-        top: 100%;
-        background-color: #fff;
-        left: 0;
-        right: 0;
-        padding: 0 0 2rem 4rem;
-    }
-    .navbar-brand {
-        margin-left: 1rem;
-    }
-    .gallery-container {
-        display: grid;
-        grid-template-columns: 3fr 3fr 3fr;
-        grid-template-areas:
-        'item1 item2 item4'
-        'item1 item3 item4';
-        gap: 10px;
-    }
-    .nav-item{
-        width: fit-content;
-    }
-    #popup {
-        width: 88%;
-        height: 60vh;
-        z-index: 9;
-        left: 6%;
-    }
-    header div.py-5{
-        padding-top: 5.5rem!important;
-    }
-}
-@media(max-width:767.8px){
-    footer {
-        width: 100%;
-        position: relative;
-        z-index: 0;
-    }
-    body{
-        margin-bottom: 0 !important;
-    }
-    .gallery-container .item .categoryBtn a {
-        padding: 0.5rem 0.75rem;
-    }
-}
-@media(max-width:768px){
-    .navbar-collapse{
-        padding: 0 0 2rem 2.5rem;
-    }
-}
-@media(max-width:578px){
-    .carousel-main .carousel-cell {
-        width: 100%;
-        height: 320px !important
-    }
-    .trends .carousel-item img{
-        height: 200px !important;
-    }
-    .gallery-container {
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-        grid-template-areas:
-            'item1 item2'
-            'item1 item3'
-            'item1 item4';
-        gap: 5px;
-    }
-    .zoom img {
-        height: 165px;
-    }
-    
-    .copyright p{
-        font-size: 12px;
-    }
-    .copyright .container{
-        flex-wrap: wrap;
-    }
-    .line{
-        width: 33%;
-    }
-    #popup{
-        width: 90%;
-        height: 80vh;
-        left: 5%;
-    }
-    #popup .btns{
-        margin: 0;
-    }
-    .trendBtn a{
-        font-size: 15px;
-        padding: 0.38rem .8rem;
-    }
-    .navbar-collapse{
-        padding: 0 0 2rem 1rem;
-    }
-}
 
 .cart-container .table {
     vertical-align: middle;
@@ -787,4 +690,121 @@ ul{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 16px;
+}
+
+
+@media(max-width:992px){
+    .navbar-collapse{
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        padding: 0 0 2rem 4rem;
+    }
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-areas:
+        'item1 item2 item4'
+        'item1 item3 item4';
+        gap: 10px;
+    }
+    .nav-item{
+        width: fit-content;
+    }
+    #popup {
+        width: 88%;
+        height: 60vh;
+        z-index: 9;
+        left: 6%;
+    }
+    header div.py-5{
+        padding-top: 5.5rem!important;
+    }
+    .fav-grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
+    }
+    .fav-container .nav{
+        display: none;
+    }
+}
+@media(max-width:767.8px){
+    footer {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    body{
+        margin-bottom: 0 !important;
+    }
+    .gallery-container .item .categoryBtn a {
+        padding: 0.5rem 0.75rem;
+    }
+}
+@media(max-width:768px){
+    .navbar-collapse{
+        padding: 0 0 2rem 2.5rem;
+    }
+    .fav-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+    }
+}
+@media(max-width:578px){
+    .carousel-main .carousel-cell {
+        width: 100%;
+        height: 320px !important
+    }
+    .trends .carousel-item img{
+        height: 200px !important;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas:
+            'item1 item2'
+            'item1 item3'
+            'item1 item4';
+        gap: 5px;
+    }
+    .zoom img {
+        height: 165px;
+    }
+    
+    .copyright p{
+        font-size: 12px;
+    }
+    .copyright .container{
+        flex-wrap: wrap;
+    }
+    .line{
+        width: 33%;
+    }
+    #popup{
+        width: 90%;
+        height: 80vh;
+        left: 5%;
+    }
+    #popup .btns{
+        margin: 0;
+    }
+    .trendBtn a{
+        font-size: 15px;
+        padding: 0.38rem .8rem;
+    }
+    .navbar-collapse{
+        padding: 0 0 2rem 1rem;
+    }
+    .fav-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
 }
