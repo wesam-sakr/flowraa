@@ -16,47 +16,47 @@
 <body>
 
     <!--navbar-->
-    <nav class="nav-bar navbar navbar-expand-lg  py-2 bg-navbar">
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
         <div class="container">
             <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Floraa</a>
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link  text-dark me-3" target="_blank" href="wedding.html">Wedding<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-dark me-3" target="_blank" href="event.html">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-dark me-3" href="#">Celebrations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-dark me-3" href="#">Home Decor</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  text-dark me-3" href="#">Sale</a>
-              </li>
-          </ul>
-        
-          <ul class="navbar-nav text-dark">
-                
-            <li class="nav-item py-2">
-                <a href="sign.html" target="_blank" class="text-dark"><i class="far fa-user me-4"></i></a>
-            </li>
-            <li class="nav-item py-2" style="position: relative;">
-                <a href="" class="text-dark"><i class="far fa-heart me-4"></i></a>
-                <div id="like" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: 27%;top:7%;"></div>
-            </li>
-            <li class="nav-item py-2" style="position: relative;">
-                <a href="" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
-                <div id="cart" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: -25%;top:7%;"></div>
-            </li>
-        </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                <a class="nav-link  text-dark me-3" target="_blank" href="wedding.html">Wedding<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link  text-dark me-3" target="_blank" href="event.html">Event</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link  text-dark me-3" href="#">Celebrations</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link  text-dark me-3" href="#">Home Decor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-dark me-3" href="#">Sale</a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav text-dark">
+                    
+                <li class="nav-item py-2">
+                    <a href="sign.html" target="_blank" class="text-dark"><i class="far fa-user me-4"></i></a>
+                </li>
+                <li class="nav-item py-2" style="position: relative;">
+                    <a href="" class="text-dark"><i class="far fa-heart me-4"></i></a>
+                    <div id="like" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: 27%;top:7%;"></div>
+                </li>
+                <li class="nav-item py-2" style="position: relative;">
+                    <a href="" class="text-dark"><i class="fas fa-shopping-cart"></i></a>
+                    <div id="cart" class="small d-flex align-items-center justify-content-center" style="width: 17px;height: 17px;background-color: black;color: white;border-radius: 50%;position: absolute; right: -25%;top:7%;"></div>
+                </li>
+            </ul>
+            </div>
         </div>
     </nav>
     <!--navbar end-->
@@ -70,8 +70,8 @@
     </header>
 
     <div class="container py-5">
-        <div class="row">
-            <div class="col-6">
+        <div class="row gy-3">
+            <div class="col-12 col-md-6">
                 <h3 class="pb-3">DROP US A LINE</h3>
                 <p class="text-muted">Your Name (required)</p>
                 <input type="text" required class="form-control mb-3">
@@ -94,76 +94,137 @@
         </div>
     </div>
 
-    <footer class="mt-5 pt-5" >
+    <footer class="">
         <div class="foot pt-5" style="background-image: url('images/bgfooter.jpg');">
-         <div class="container pb-4">
+         <div class="container pb-3">
              <div class="row">
-                 <div class="col-3">
+                 <div class="col-12 col-md-12 col-lg-3 pb-4">
                      <h5>Get in touch</h5>
-                         <li style="display:flex;" class="my-3 text-muted"><i class="fa fa-map-marker me-3" ></i><h6>184 Main Rd E, St Albans
+                     <ul class="m-0 p-0">
+                         <li style="display:flex;" class="my-3 text-muted">
+                             <a href="" class="link"></a>
+                             <i class="fa fa-map-marker me-3" ></i>
+                             <h6>184 Main Rd E, St Albans
                              VIC 3021, Australia</h6>
                          </li>
-                         <li style="display:flex" class="my-4 text-muted"><i class="fa fa-envelope me-3"></i><h6>contact@company.com</h6>
+                         <li style="display:flex" class="my-3 text-muted">
+                             <a href="" class="link"></a>
+                             <i class="fa fa-envelope me-3"></i>
+                             <h6>contact@company.com</h6>
                          </li>
-                         <li style="display:flex;" class="mb-3 text-muted"><i class="fa fa-phone me-3"></i><h6>+001 2233 456</h6>
+                         <li style="display:flex;" class="mb-3 text-muted">
+                             <a href="" class="link"></a>
+                             <i class="fa fa-phone me-3"></i>
+                             <h6>+001 2233 456</h6>
                          </li>
                          <li class="text-muted" style="display:flex;">
-                             <i class="fab fa-facebook-f me-4"></i>
+                             <i class="fab fa-facebook-f me-4"><a href="" class=""></a></i>
                              <i class="fab fa-twitter me-4"></i>
                              <i class="fab fa-instagram me-4"></i>
                              <i class="fab fa-linkedin-in me-4"></i>
                              <i class="fab fa-pinterest-p"></i>
                          </li>
-                 </div>
-                 <div class="col-3">
-                     <h5>Categories</h5>
-                     <p class="text-muted mt-3">Celebrations</p>
-                     <p class="text-muted">Events</p>
-                     <p class="text-muted">Home Decor</p>
-                     <p class="text-muted">Seasonal Bouquet</p>
-                     <p class="text-muted">Wedding Decor</p>
+                     </ul>
                  </div>
  
-                 <div class="col-3">
+                 <div class="col-4 col-md-4 col-lg-3">
+                     <h5>Categories</h5>
+                     <li class="text-muted mt-3">
+                         <a href="" class="link"></a>
+                         Celebrations
+                     </li>
+                     <li class="text-muted">
+                         <a href="event.html" class="link"></a>
+                         Events
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Home Decor
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Seasonal Bouquet
+                     </li>
+                     <li class="text-muted">
+                         <a href="wedding.html" class="link"></a>
+                         Wedding Decor
+                     </li>
+                 </div>
+ 
+                 <div class="col-4 col-md-4 col-lg-3">
                      <h5>Portfolio</h5>
-                     <p class="text-muted mt-3">Events</p>
-                     <p class="text-muted">Weddings</p>
-                     <p class="text-muted">Daily Florals</p>
-                     <p class="text-muted">Celebrations</p>
-                     <p class="text-muted">Home Decoration</p>
+                     <li class="text-muted mt-3">
+                         <a href="" class="link"></a>
+                         Events
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Weddings
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Daily Florals
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Celebrations
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Home Decoration
+                     </li>
                  </div>
                  
-                 <div class="col-3">
+                 <div class="col-4 col-md-4 col-lg-3">
                      <h5>Useful links</h5>
-                     <p class="text-muted mt-3">Return & Policy</p>
-                     <p class="text-muted">Store Location</p>
-                     <p class="text-muted">Latest Posts</p>
-                     <p class="text-muted">Size Guide</p>
-                     <p class="text-muted">About Us</p>
+                     <li class="text-muted mt-3">
+                         <a href="" class="link"></a>
+                         Return & Policy
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Store Location
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Latest Posts
+                     </li>
+                     <li class="text-muted">
+                         <a href="" class="link"></a>
+                         Size Guide
+                     </li>
+                     <li class="text-muted">
+                         <a href="about.html" class="link"></a>
+                         About Us
+                     </li>
                  </div>
              </div>
          </div>
         </div>
-         <div style="background-color:white;">
+         <div class="copyright" style="background-color:white;">
              <div class="container d-flex justify-content-between py-3 text-muted">
-                 <div>Copyright © 2020 Kalles all rights reserved. Powered by The4</div>
+                 <p>Copyright © 2023 Floraa all rights reserved</p>
                  <div class="text-right">
                      <a href="about.html" target="_blank" class="text-muted me-3">About Us</a>
                      <a href="contact.html" target="_blank" class="text-muted me-3">Contact Us</a>
                      <a href="" class="text-muted me-3">Shop</a>
-                     <a href="" class="text-muted">blog</a>
+                     <a href="blog.html" class="text-muted">blog</a>
  
                  </div>
              </div>
          </div>
-    </footer>
+     </footer>
  
-    <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
-        <a href="index.html">
-            <i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i>
-        </a>
-    </div>
-
-    <script src="Js/first.js"></script>
+     <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
+         <a href="#"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
+     </div>
+ 
+ 
+     <!-- jQuery script -->
+     <script src="Js/jquery-3.6.0.min.js"></script>
+     <script src="Js/popper.min.js"></script>
+     <script src="Js/bootstrap.min.js"></script>
+     <script src="Js/flickity.pkgd.min.js"></script>
+     <script src="Js/script.js"></script>
 </body>
 </html>

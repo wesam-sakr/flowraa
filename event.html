@@ -16,7 +16,7 @@
 <body>
 
     <!--navbar-->
-    <nav class="nav-bar navbar navbar-expand-lg  py-2 bg-navbar">
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
         <div class="container">
             <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Floraa</a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,177 +75,357 @@
     <section class="py-5" >
         <div class="container">
             <div class="text-center mb-5">
-                <h3></h3>
+                <h3>BEST SELLER</h3>
                 <div class="line"></div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+            <div class="row justify-content-center gx-2 gx-lg-3 ">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/s1.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s11.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/s11.png);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Medium Flower Arrangment</h6>
-                    <p class="text-muted">$333.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Medium Flower Arrangment</h6>
+                            <p class="text-muted">$333.00</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/s2.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s22.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/s22.png);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Lovely Lavender Gift Box</h6>
-                    <p class="text-muted">$295.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Lovely Lavender Gift Box</h6>
+                            <p class="text-muted">$295.00</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/s3.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s33.webp);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/s33.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Floral Garden Arrangement</h6>
-                    <p class="text-muted">$195.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Floral Garden Arrangement</h6>
+                            <p class="text-muted">$195.00</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/s4.png" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/s44.png);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/s44.png);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Botanical Crowns</h6>
-                    <p class="text-muted">$25.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Botanical Crowns</h6>
+                            <p class="text-muted">$25.00</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/3.webp" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/33.webp);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/33.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3  rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Seasonal Arrangement</h6>
-                    <p class="text-muted">$95.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Seasonal Arrangement</h6>
+                            <p class="text-muted">$95.00</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 trend">
+                <div class="col-lg-3 col-md-4 col-6 trend">
                     <div class="trending zoom">
+                        <i class="far fa-heart fav"></i>
                         <img class="w-100" src="images/1.webp" alt="">
-                        <div class="trendHover d-flex flex-colum flex-wrap align-items-center justify-content-center" style="background-image: url(images/11.webp);">
-                            <div class="trendBtn mt-3">
-                                <a href="#" class="btn btn-md px-4 mt-5 rounded-pill" role="button" aria-pressed="true">Quick View</a> 
+                        <div class="trendHover" style="background-image: url(images/11.webp);">
+                            <div class="trendBtn mb-3">
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
                             </div>
-                            <div class="trendBtn mb-5">
-                                <a href="#" class="btn btn-md px-4 mb-3 rounded-pill" role="button" aria-pressed="true">Add To Card</a> 
+                            <div class="trendBtn">
+                                <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
                             </div>
                         </div>
                     </div>
-                    <h6 class="pt-3">Regular Succulent Shebang</h6>
-                    <p class="text-muted">$125.00</p>
+                    <div class="f-card-body">
+                        <a href="single-product.html">
+                            <h6 class="pt-3">Regular Succulent Shebang</h6>
+                            <p class="text-muted">$125.00</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--BEST SELLER END-->
 
-    <footer class="mt-5 pt-5" >
+    <footer class="">
         <div class="foot pt-5" style="background-image: url('images/bgfooter.jpg');">
-         <div class="container pb-4">
-             <div class="row">
-                 <div class="col-3">
-                     <h5>Get in touch</h5>
-                         <li style="display:flex;" class="my-3 text-muted"><i class="fa fa-map-marker me-3" ></i><h6>184 Main Rd E, St Albans
-                             VIC 3021, Australia</h6>
-                         </li>
-                         <li style="display:flex" class="my-4 text-muted"><i class="fa fa-envelope me-3"></i><h6>contact@company.com</h6>
-                         </li>
-                         <li style="display:flex;" class="mb-3 text-muted"><i class="fa fa-phone me-3"></i><h6>+001 2233 456</h6>
-                         </li>
-                         <li class="text-muted" style="display:flex;">
-                             <i class="fab fa-facebook-f me-4"></i>
-                             <i class="fab fa-twitter me-4"></i>
-                             <i class="fab fa-instagram me-4"></i>
-                             <i class="fab fa-linkedin-in me-4"></i>
-                             <i class="fab fa-pinterest-p"></i>
-                         </li>
-                 </div>
-                 <div class="col-3">
-                     <h5>Categories</h5>
-                     <p class="text-muted mt-3">Celebrations</p>
-                     <p class="text-muted">Events</p>
-                     <p class="text-muted">Home Decor</p>
-                     <p class="text-muted">Seasonal Bouquet</p>
-                     <p class="text-muted">Wedding Decor</p>
-                 </div>
- 
-                 <div class="col-3">
-                     <h5>Portfolio</h5>
-                     <p class="text-muted mt-3">Events</p>
-                     <p class="text-muted">Weddings</p>
-                     <p class="text-muted">Daily Florals</p>
-                     <p class="text-muted">Celebrations</p>
-                     <p class="text-muted">Home Decoration</p>
-                 </div>
-                 
-                 <div class="col-3">
-                     <h5>Useful links</h5>
-                     <p class="text-muted mt-3">Return & Policy</p>
-                     <p class="text-muted">Store Location</p>
-                     <p class="text-muted">Latest Posts</p>
-                     <p class="text-muted">Size Guide</p>
-                     <p class="text-muted">About Us</p>
-                 </div>
-             </div>
-         </div>
-        </div>
-         <div style="background-color:white;">
-             <div class="container d-flex justify-content-between py-3 text-muted">
-                 <div>Copyright © 2020 Kalles all rights reserved. Powered by The4</div>
-                 <div class="text-right">
-                     <a href="about.html" target="_blank" class="text-muted me-3">About Us</a>
-                     <a href="contact.html" target="_blank" class="text-muted me-3">Contact Us</a>
-                     <a href="" class="text-muted me-3">Shop</a>
-                     <a href="" class="text-muted">blog</a>
- 
-                 </div>
-             </div>
-         </div>
-     </footer>
- 
-     <div class="up text-muted text-center d-flex justify-content-center align-items-center" > <a href="index.html"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a></div>
+            <div class="container pb-3">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-3 pb-4">
+                        <h5>Get in touch</h5>
+                        <ul class="m-0 p-0">
+                            <li style="display:flex;" class="my-3 text-muted">
+                                <a href="" class="link"></a>
+                                <i class="fa fa-map-marker me-3" ></i>
+                                <h6>184 Main Rd E, St Albans
+                                VIC 3021, Australia</h6>
+                            </li>
+                            <li style="display:flex" class="my-3 text-muted">
+                                <a href="" class="link"></a>
+                                <i class="fa fa-envelope me-3"></i>
+                                <h6>contact@company.com</h6>
+                            </li>
+                            <li style="display:flex;" class="mb-3 text-muted">
+                                <a href="" class="link"></a>
+                                <i class="fa fa-phone me-3"></i>
+                                <h6>+001 2233 456</h6>
+                            </li>
+                            <li class="text-muted" style="display:flex;">
+                                <i class="fab fa-facebook-f me-4"><a href="" class=""></a></i>
+                                <i class="fab fa-twitter me-4"></i>
+                                <i class="fab fa-instagram me-4"></i>
+                                <i class="fab fa-linkedin-in me-4"></i>
+                                <i class="fab fa-pinterest-p"></i>
+                            </li>
+                        </ul>
+                    </div>
     
+                    <div class="col-4 col-md-4 col-lg-3">
+                        <h5>Categories</h5>
+                        <li class="text-muted mt-3">
+                            <a href="" class="link"></a>
+                            Celebrations
+                        </li>
+                        <li class="text-muted">
+                            <a href="event.html" class="link"></a>
+                            Events
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Home Decor
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Seasonal Bouquet
+                        </li>
+                        <li class="text-muted">
+                            <a href="wedding.html" class="link"></a>
+                            Wedding Decor
+                        </li>
+                    </div>
+    
+                    <div class="col-4 col-md-4 col-lg-3">
+                        <h5>Portfolio</h5>
+                        <li class="text-muted mt-3">
+                            <a href="" class="link"></a>
+                            Events
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Weddings
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Daily Florals
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Celebrations
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Home Decoration
+                        </li>
+                    </div>
+                    
+                    <div class="col-4 col-md-4 col-lg-3">
+                        <h5>Useful links</h5>
+                        <li class="text-muted mt-3">
+                            <a href="" class="link"></a>
+                            Return & Policy
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Store Location
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Latest Posts
+                        </li>
+                        <li class="text-muted">
+                            <a href="" class="link"></a>
+                            Size Guide
+                        </li>
+                        <li class="text-muted">
+                            <a href="about.html" class="link"></a>
+                            About Us
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="copyright" style="background-color:white;">
+                <div class="container d-flex justify-content-between py-3 text-muted">
+                    <p>Copyright © 2023 Floraa all rights reserved</p>
+                    <div class="text-right">
+                        <a href="about.html" target="_blank" class="text-muted me-3">About Us</a>
+                        <a href="contact.html" target="_blank" class="text-muted me-3">Contact Us</a>
+                        <a href="" class="text-muted me-3">Shop</a>
+                        <a href="blog.html" class="text-muted">blog</a>
+    
+                    </div>
+                </div>
+            </div>
+    </footer>
+    col-md-3 col-6 pr_animated mt__30 pr_grid_item pr_list_item product nt_pr desgin__1 t4s-updated-prlink done col-lg-15
+    col-md-3 col-6 pr_animated mt__30 pr_grid_item pr_list_item product nt_pr desgin__1 t4s-updated-prlink done col-lg-2
+    <div id="popup">
+        <div class="popup-container">
+            <div class="row align-items-center h-100">
+                <div class="col-md-6 h-100">
+                    <div id="carouselExampleAutoplaying" class="carousel slide h-100 m-0" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                          <div class="carousel-item active">
+                            <img src="images/1.webp" class="d-block w-100 h-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/11.webp" class="d-block w-100 h-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/111.webp" class="d-block w-100 h-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background-color: #fff;color: black;">
+                    <div class="container-fluid py-4">
+                        <h3>Regular Succulent Shebang</h3>
+                        <h4 class="text-muted">$<span id="price">125</span>.00</h4>
+                        <div class="pt-3 btns row w-100 justify-content-between">
+                            <div class=" col-12 col-lg-3 mb-3 rounded-pill btn-group px-0" role="group" aria-label="Basic example">
+                                <button onclick="sub()" type="button" class="btn btn-dark"><i class="fas fa-minus"></i></button>
+                                <input readonly value="1" class="btn btn-dark" id="amount" style="width: inherit;padding: 0;">
+                                <button onclick="add()" type="button" class="btn btn-dark"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <a  class="col-5 col-lg-5 mb-3 btn  rounded add  cart" role="button">Add To Cart</a>
+                            <button type="button" class="addFav col-auto col-lg-3 mb-3 btn btn-dark   py-2 rounded"><i class="far fa-heart"></i></button>
+                            <a href="buy.html" target="_blank" class="col-5 col-lg-5 mb-3 btn btn-dark rounded">Buy It Now </a>
+                        </div>
+                        
+                        <p class="text-muted">SKU: FL-08</p>
+                        <p><span class="text-muted">
+                            Categories:</span> All2, Events, Home Decor (Boho), Seasonal Bouquet, Wedding Decor</p>
+                        <p><span class="text-muted pb-4">Tags:</span> Celebrations, Events, Flowers, Home Decor, Floraa Frorals, Wedding Decorr</p>
+                        <button type="button" class="btn btn-outline-dark me-4 px-5 py-2 rounded" onclick="toggle()">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
+        <a href="#"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
+    </div>
 
-     <script src="Js/first.js"></script>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="product-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <img src="images/4.webp" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="cart-product-item bg-transparent">
+                            <div class="col-12">
+                                <div class="cart-product-name">
+                                    
+                                </div>
+                                <h5>Regular Succulent Shebang</h5>
+                                
+                                <span class="full-price"><span id="price">250</span> $</span>
+                                <div class="product-info mt-3">
+                                    <div class="product-quantity">
+                                        <a href="javascript:void(0);"onclick="add()" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                        <input type='text' name='quantity' value='1' class='qty' id="amount"/>
+                                        <a href="javascript:void(0);" onclick="sub()" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                                    </div>
+                                    <button class="add-to-cart cart m-0 w-auto">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery script -->
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/flickity.pkgd.min.js"></script>
+    <script src="Js/script.js"></script>
 </body>
 </html>
