@@ -196,6 +196,9 @@ nav div ul li i{
 .popup-container.active{
     transform:scale(1) ;
 }
+#popup .carousel-item{
+    height: 100%;
+}
 .add{
     background-color:var(--main-color) ;color: white;font-weight: bold;
 }
@@ -318,6 +321,8 @@ nav div ul li i{
 }
 .blog-details p{
     line-height: 2;
+    margin-bottom: 1rem;
+    color: #6c757d!important;
 }
 
 footer{
@@ -756,8 +761,8 @@ ul{
     }
 }
 @media(max-width:578px){
-    header {
-        height: 60vh;
+    #header {
+        height:70vh;
     }
     .carousel-main .carousel-cell {
         width: 100%;
@@ -796,6 +801,9 @@ ul{
     #popup .btns{
         margin: 0;
     }
+    #popup .carousel-item{
+        height: auto;
+    }
     .trendBtn a{
         font-size: 15px;
         padding: 0.38rem .8rem;
@@ -807,5 +815,24 @@ ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 16px;
+    }
+    .table .product-quantity{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cart-container .product-details img {
+        width: 70px !important;
+    }
+    .cart-container .product-details h5{
+        font-size: smaller;
+    }
+    .cart-container .product-details .add-to-cart {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .cart-container .product-details .full-price {
+        font-size: 18px;
     }
 }

@@ -1,16 +1,11 @@
+// MARGIN BODY TO DISPLAY FOOTER
 var footerHeight= $('footer').height()
 $('body').css("margin-bottom", footerHeight)
-
 $(window).resize(function() {
     $('body').css("margin-bottom", footerHeight)
 })
-function toggle(){
-    var popupContainer = document.querySelector('.popup-container')
-    popupContainer.classList.toggle("active");
-    var popup = document.getElementById("popup");
-    popup.classList.toggle("blur");
-}
 
+// ADD AND REMOVE LIKES
 var like = Number(document.getElementById('like').innerHTML);
 $(".fav").click(function() {
     $(this).toggleClass("far fas");
@@ -24,7 +19,6 @@ $(".fav").click(function() {
     document.getElementById('like').innerHTML= like;
     console.log(like)
 })
-
 $('.addFav').click(function(){
     like = Number(document.getElementById('like').innerHTML)
     var x = $(this).find(".fa-heart");
@@ -40,7 +34,6 @@ $('.addFav').click(function(){
     document.getElementById('like').innerHTML= like;
 
 })
-
 // ADD AND REMOVE CART
 var cart = Number(document.getElementById('cart').innerHTML);
 $('.cart').click(function(){
@@ -57,14 +50,80 @@ $('.cart').click(function(){
     document.getElementById('cart').innerHTML= cart;
 })
 
-var price= Number(document.getElementById('price').innerHTML);
-// alert(price)
+let final
+let subTotal
+let finalPrice
+$('.quantity.plus').each(function (key) {
+    let $input = $(this).next('input.qty');
+    let parent = ($(this).parents().find('.cart-product-item .total'))[key]
+    const price = Number(($(parent)).attr('data-target'))
+    subTotal = Number($('.Subtotal')[0].innerHTML )
+    $(this).click(function(){
+        finalPrice = 0
+        let val = parseInt($input.val())+ 1;
+        $input.val(val)
+        final = parent.innerHTML = val * price
+        calcTotal()
+    })
+    
+})
+calcTotal()
+function calcTotal() {
+    $('.total').each(function(i){
+        console.log($('.total')[i].innerHTML);
+        finalPrice += Number($('.total')[i].innerHTML)
+        console.log(finalPrice);
+        $('.Subtotal')[0].innerHTML = finalPrice
+    });
+}
+$('.quantity.minus').each(function (key) {
+    let $input = $(this).prev('input.qty');
+    let parent = ($(this).parents().find('.cart-product-item .total'))[key]
+    const price = Number(($(parent)).attr('data-target'))
+    $(this).click(function(){
+        finalPrice = 0
+        let val = parseInt($input.val())
+        if (val > 1) {
+            val -= 1 ;
+            $input.val(val);
+            parent.innerHTML = val * price;
+        } 
+        calcTotal()
+    })
+})
 
+// FAV PAGE
+$( ".fav-container .nav-link" ).each(function() {
+    var colNum = $(this).attr('data-target');
+    for(x=0 ; x < colNum ; x++){
+        $(this).append(`<div class="colNum"></div>`)
+    }
+});
+$('.fav-container .nav-link').click(function(){
+    var colNum = $(this).attr('data-target')
+    $('.fav-grid-container').css('grid-template-columns' ,'repeat('+colNum+', 1fr)')
+})
+
+// FLICKITY SLIDER -> PRODUCT PAGE
+$('.carousel-main').flickity();
+$('.carousel-nav').flickity({
+    asNavFor: '.carousel-main',
+    contain: true,
+    pageDots: false
+});
+
+// POPUP
+function popupToggle(){
+    var popupContainer = document.querySelector('.popup-container')
+    popupContainer.classList.toggle("active");
+    var popup = document.getElementById("popup");
+    popup.classList.toggle("blur");
+}
+var price= Number(document.getElementById('price').innerHTML);
 var amount= Number(document.getElementById('amount').value);
 $('#amount').change(function(){
     amount= Number(document.getElementById('amount').value);
     document.getElementById('price').innerHTML= price * amount;
-    // alert( amount +"           "+ price)
 })
 function add(){
     amount=amount+1;
@@ -78,36 +137,3 @@ function sub(){
     document.getElementById('amount').value= amount;
     document.getElementById('price').innerHTML= price * amount;
 }
-$('.quantity.plus').click(function(e) {
-    let $input = $(this).next('input.qty');
-    let val = parseInt($input.val());
-    $input.val( val+1 ).change();
-
-  });
-  
-$('.quantity.minus').click(function(e) {
-  let $input = $(this).prev('input.qty');
-  var val = parseInt($input.val());
-  if (val > 1) {
-      $input.val( val-1 ).change();
-  } 
-});
-$( ".fav-container .nav-link" ).each(function() {
-    var colNum = $(this).attr('data-target');
-    for(x=0 ; x < colNum ; x++){
-        $(this).append(`<div class="colNum"></div>`)
-    }
-  });
-$('.fav-container .nav-link').attr('data-target')
-$('.fav-container .nav-link').click(function(){
-    // if ($(this).hasClass("active")){
-    var colNum = $(this).attr('data-target')
-    $('.fav-grid-container').css('grid-template-columns' ,'repeat('+colNum+', 1fr)')
-})
-
-$('.carousel-main').flickity();
-$('.carousel-nav').flickity({
-    asNavFor: '.carousel-main',
-    contain: true,
-    pageDots: false
-});

@@ -91,7 +91,7 @@
                         <img class="w-100" src="images/s1.png" alt="">
                         <div class="trendHover" style="background-image: url(images/s11.png);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -111,7 +111,7 @@
                         <img class="w-100" src="images/s2.png" alt="">
                         <div class="trendHover" style="background-image: url(images/s22.png);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -131,7 +131,7 @@
                         <img class="w-100" src="images/s3.png" alt="">
                         <div class="trendHover" style="background-image: url(images/s33.webp);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -151,7 +151,7 @@
                         <img class="w-100" src="images/s4.png" alt="">
                         <div class="trendHover" style="background-image: url(images/s44.png);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -171,7 +171,7 @@
                         <img class="w-100" src="images/3.webp" alt="">
                         <div class="trendHover" style="background-image: url(images/33.webp);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -191,7 +191,7 @@
                         <img class="w-100" src="images/1.webp" alt="">
                         <div class="trendHover" style="background-image: url(images/11.webp);">
                             <div class="trendBtn mb-3">
-                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=toggle()>Quick View</a> 
+                                <a class="btn btn-md rounded-pill " role="button" aria-pressed="true" onclick=popupToggle()>Quick View</a> 
                             </div>
                             <div class="trendBtn">
                                 <a  class="btn btn-md rounded-pill cart " role="button" aria-pressed="true">Add To Cart</a> 
@@ -330,13 +330,12 @@
                 </div>
             </div>
     </footer>
-    col-md-3 col-6 pr_animated mt__30 pr_grid_item pr_list_item product nt_pr desgin__1 t4s-updated-prlink done col-lg-15
-    col-md-3 col-6 pr_animated mt__30 pr_grid_item pr_list_item product nt_pr desgin__1 t4s-updated-prlink done col-lg-2
+    
     <div id="popup">
         <div class="popup-container">
             <div class="row align-items-center h-100">
                 <div class="col-md-6 h-100">
-                    <div id="carouselExampleAutoplaying" class="carousel slide h-100 m-0" data-bs-ride="carousel">
+                    <div id="carouselExampleAutoplaying" class="carousel h-100 slide m-0" data-bs-ride="carousel">
                         <div class="carousel-inner h-100">
                           <div class="carousel-item active">
                             <img src="images/1.webp" class="d-block w-100 h-100" alt="...">
@@ -377,14 +376,11 @@
                         <p><span class="text-muted">
                             Categories:</span> All2, Events, Home Decor (Boho), Seasonal Bouquet, Wedding Decor</p>
                         <p><span class="text-muted pb-4">Tags:</span> Celebrations, Events, Flowers, Home Decor, Floraa Frorals, Wedding Decorr</p>
-                        <button type="button" class="btn btn-outline-dark me-4 px-5 py-2 rounded" onclick="toggle()">close</button>
+                        <button type="button" class="btn btn-outline-dark me-4 px-5 py-2 rounded" onclick="popupToggle()">close</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
-        <a href="#"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
     </div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
