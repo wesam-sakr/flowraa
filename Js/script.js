@@ -50,9 +50,10 @@ $('.cart').click(function(){
     document.getElementById('cart').innerHTML= cart;
 })
 
-let final
+
+// calc price in cart
 let subTotal
-let finalPrice
+let finalPrice = 0
 $('.quantity.plus').each(function (key) {
     let $input = $(this).next('input.qty');
     let parent = ($(this).parents().find('.cart-product-item .total'))[key]
@@ -62,20 +63,11 @@ $('.quantity.plus').each(function (key) {
         finalPrice = 0
         let val = parseInt($input.val())+ 1;
         $input.val(val)
-        final = parent.innerHTML = val * price
+        parent.innerHTML = val * price
         calcTotal()
     })
     
 })
-calcTotal()
-function calcTotal() {
-    $('.total').each(function(i){
-        console.log($('.total')[i].innerHTML);
-        finalPrice += Number($('.total')[i].innerHTML)
-        console.log(finalPrice);
-        $('.Subtotal')[0].innerHTML = finalPrice
-    });
-}
 $('.quantity.minus').each(function (key) {
     let $input = $(this).prev('input.qty');
     let parent = ($(this).parents().find('.cart-product-item .total'))[key]
@@ -91,6 +83,15 @@ $('.quantity.minus').each(function (key) {
         calcTotal()
     })
 })
+function calcTotal() {
+    $('.total').each(function(i){
+        console.log( Number($('.total')[i].innerHTML));
+        finalPrice += Number($('.total')[i].innerHTML)
+        console.log(finalPrice);
+        $('.Subtotal')[0].innerHTML = finalPrice
+    });
+}
+calcTotal()
 
 // FAV PAGE
 $( ".fav-container .nav-link" ).each(function() {
@@ -103,6 +104,7 @@ $('.fav-container .nav-link').click(function(){
     var colNum = $(this).attr('data-target')
     $('.fav-grid-container').css('grid-template-columns' ,'repeat('+colNum+', 1fr)')
 })
+
 
 // FLICKITY SLIDER -> PRODUCT PAGE
 $('.carousel-main').flickity();

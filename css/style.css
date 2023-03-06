@@ -65,8 +65,8 @@ nav div ul li i{
     font-size: 1.4rem;
     font-weight: 200;}
 
+    
 /*----header slider----*/
-
 .slide{
     font-family: 'Quicksand', sans-serif;
     line-height: 1.75rem;  
@@ -200,27 +200,33 @@ nav div ul li i{
     height: 100%;
 }
 .add{
-    background-color:var(--main-color) ;color: white;font-weight: bold;
+    background-color:var(--main-color) ;
+    color: white;
+    font-weight: bold;
 }
 .add:hover{
-    background-color:var(--secondry-color) ;color: white;font-weight: bold;
+    background-color:var(--secondry-color) ;
+    color: white;
+    font-weight: bold;
 }
 .line{
     width: 15%;
     height: 2.2px;
-    background-color:var(--main-color)  ;
+    background-color:var(--main-color);
     margin: auto;
     border-radius: 2px;
 }
 .trend h6{
-    color:var(--main-color)  ;}
+    color:var(--main-color) ;
+}
 .trendBtn a{
     background-color:var(--main-color) ;
     color: white;
     padding: 0.38rem 1.5rem;
 }
 .trending{
-    position: relative;}
+    position: relative;
+}
 .trendHover{
     width: 100%;
     height: 100%;
