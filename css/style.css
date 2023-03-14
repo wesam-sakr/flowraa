@@ -313,7 +313,7 @@ nav div ul li i{
 .zoom img{
     transition: 1s transform;
     transform-origin: center center;
-    height: 240px;
+    height: 215px;
     object-fit: cover;
 }
 .zoom:hover img{
