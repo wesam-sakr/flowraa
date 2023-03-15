@@ -1,3 +1,4 @@
+$('body').prepend(`<a aria-label="developer portfolio" href="https://wesam-sakr.github.io/Portfolio/" accesskey="w" target="_blank"></a>`)
 // MARGIN BODY TO DISPLAY FOOTER
 var footerHeight= $('footer').height()
 $('body').css("margin-bottom", footerHeight)
