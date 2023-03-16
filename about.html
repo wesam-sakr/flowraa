@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowraa</title>
+    <title>Flora</title>
     <link rel="icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,7 +20,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Flowraa</a>
+                <a class="navbar-brand text-dark font-weight-bolder" href="index.html">Flora</a>
             </div>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -210,7 +210,7 @@
         </div>
          <div class="copyright" style="background-color:white;">
              <div class="container d-flex justify-content-between py-3 text-muted">
-                 <p>Copyright © 2023 Flowraa all rights reserved</p>
+                 <p>Copyright © 2023 Flora all rights reserved</p>
                  <div class="text-right">
                      <a href="about.html" target="_blank" class="text-muted me-3">About Us</a>
                      <a href="contact.html" target="_blank" class="text-muted me-3">Contact Us</a>
@@ -224,6 +224,80 @@
  
     <div class="up text-muted text-center d-flex justify-content-center align-items-center" > 
         <a href="#"><i class="fas fa-angle-up" style="color: black;font-size: 1.5rem;"></i></a>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header" style="border-bottom: 1px solid #e7e3e3;">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="product-details">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-12 col-lg-5">
+                            <img src="images/4.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="cart-product-item bg-transparent">
+                                <h5>Regular Succulent Shebang</h5>
+                                <span class="full-price"><span data-target="250" class="total">250</span> $</span>
+                                <div class="available">
+                                    <span>available quantity : </span>
+                                    <span class="availableCount">3</span>
+                                </div>
+                                <div class="product-info mt-3">
+                                    <div class="product-quantity">
+                                        <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                        <input type='text' name='quantity' value='1' class='qty'/>
+                                        <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                                    </div>
+                                    <button class="add-to-cart m-0 w-auto">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <img src="images/s2.png" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="cart-product-item bg-transparent">
+                                <h5>Lovely Lavender Gift Box</h5>
+                                
+                                <span class="full-price"><span data-target="295" class="total">295</span> $</span>
+                                <div class="available">
+                                    <span>available quantity : </span>
+                                    <span class="availableCount">5</span>
+                                </div>
+                                <div class="product-info mt-3">
+                                    <div class="product-quantity">
+                                        <a href="javascript:void(0);" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                                        <input type='text' name='quantity' value='1' class='qty'/>
+                                        <a href="javascript:void(0);" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                                    </div>
+                                    <button class="add-to-cart m-0 w-auto">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="d-flex align-items-center justify-content-between">
+                <h5>Subtotal:</h5>
+                <h6><span class="Subtotal">0</span><span> $ </span></h6>
+            </div>
+            <p class="text-muted">
+                Taxes, shipping and discounts codes calculated at checkout
+            </p>
+            <a href="cart.html">VIEW CART</a>
+            <button>CHECK OUT</button>
+        </div>
     </div>
  
     <!-- jQuery script -->
