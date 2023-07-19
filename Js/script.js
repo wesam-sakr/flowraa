@@ -126,6 +126,9 @@ let parent
 let $input
 let available
 let val = 1
+function name(params) {
+    
+}
 $('.quantity').each(function (key) {
     subTotal = Number($('.Subtotal')[0].innerHTML)
     $(this).click(function(k){
